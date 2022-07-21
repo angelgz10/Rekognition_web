@@ -92,7 +92,7 @@ $(document).ready(function(){
                 break;
             }
             if (supportedImages.indexOf(element.type) != -1) {
-                // createPreview2(element);
+                createPreview2(element);
                 console.log("Tipo de archivo permitido")
                 $('#add-photo2').parent().css({'display':'none',}); 
             }
