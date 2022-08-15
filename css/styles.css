@@ -18,9 +18,9 @@ header {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.row, figure, h2 {
-    margin: 0 !important;
-    padding: 0 !important;
+.row, figure, h2{
+    margin: auto !important; /*0*/
+    padding: 0px !important; /*0*/
 }
 
 h2 {
@@ -225,15 +225,40 @@ main {
 }
 
 #titulo{
-    color: #fff;
-    font-size: 25px;
-    text-align: left;
-    font-weight: bold;
-}
+        color: #fff;
+        font-size: 27px;
+        text-align: left;
+        font-weight: bold;
+    }
 
 #logo_paino{
-    float: right;
-    margin-top: -48px;
-    margin-right: 20px;
-    width: 200px;
+        float: right;
+        margin-top: -48px;
+        margin-right: 20px;
+        width: 200px;
+    }
+
+/* Configuración del header responsive*/
+@media (max-width: 650px) {
+    #titulo{
+        text-align: center;
+    }
+
+    #logo_paino{
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 800px) {
+    #Images .add-new-photo2 {
+        justify-content: center;
+        margin: 0px auto;
+        font-size: 50px;
+        color: #fff;
+        border-radius: 4px;
+    }
+    
 }

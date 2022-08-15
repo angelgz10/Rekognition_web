@@ -28,7 +28,7 @@
           <div class="c-6-lg c-6-md c-10-sm c-12-xs close-modal">
             <div class="modal-card" id="loading">
               <div class="preloader"></div>
-              <span class="tag">CARAGANDO...</span>
+              <span class="tag">CARGANDO...</span>
             </div>
             <div class="modal-card" id="Message">
               <span class="tag"></span>
@@ -47,32 +47,26 @@
             <section id="Images" class="images-cards">
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     <div class="row">
-                      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12"></div>
                       <!-- PRIMERA FOTO -->
-                      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12" id="add-photo-container">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" id="add-photo-container">
                         <div class="add-new-photo first" id="add-photo">
                             <span><i class="icon-camera"></i></span>
                         </div>
                         <input type="file" id="add-new-photo" name="images[]">
                       </div>
-                      <div class="col-xl-1 col-lg-1 col-md-3 col-sm-4 col-xs-12"></div>
                       <!-- BOTON COMPARAR -->
-                      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12 trans">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 trans">
                         <div class="row justify-content-center align-items-center">
                           <button type="button" class="btn btn-success btn-lg " id="Button">COMPARAR</button>
                         </div>
                       </div>
-                      
-                      <div class="col-xl-1 col-lg-1 col-md-3 col-sm-4 col-xs-12"></div>
                       <!-- SEGUNDA IMAGEN -->
-                      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12" id="add-photo-container2">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" id="add-photo-container2">
                         <div class="add-new-photo first2" id="add-photo2">
                             <span><i class="icon-camera"></i></span>
                         </div>
                         <input type="file" id="add-new-photo2" name="images2[]">
                       </div>
-                      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12"></div>
-                    </div>
                 </form> 
             </section><br><br>
           <p id="opResult"></p>
