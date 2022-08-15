@@ -27,6 +27,7 @@ main {
   opacity: 0;
   z-index: -1;
   transition: 0.3s all ease;
+  text-align: center;
 }
 
 .modal.show {
@@ -42,7 +43,7 @@ main {
   overflow-y: auto;
   position: fixed;
   top: -100%;
-  left: 0;
+  left: 0px;
   padding: 0 5px;
   transition: 0.3s all ease;
 }
@@ -67,6 +68,8 @@ main {
   background: #fff;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
   margin: 50px;
+
+  
 }
 
 /* Loader */
