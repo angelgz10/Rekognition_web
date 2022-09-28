@@ -131,10 +131,16 @@ $(document).ready(function(){
     $(document).on("click", "#Images .image-container", function(e){
         $(this).parent().remove();
         $('#add-photo').parent().css({'display':'',}); 
+        //document.getElementById("opResult").innerHTML = ``;   
+        location.reload();
+        //console.log(imageBytesL);
     });
 
     $(document).on("click", "#Images .image-container2", function(e){
         $(this).parent().remove();
-        $('#add-photo2').parent().css({'display':'',}); 
+        $('#add-photo2').parent().css({'display':'',});
+        //document.getElementById("opResult").innerHTML = ``;
+        location.reload();
+        //console.log(imageBytesL);
     });
 });

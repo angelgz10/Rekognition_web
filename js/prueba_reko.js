@@ -6,7 +6,7 @@ document.getElementById("Button").addEventListener("click", function (event){Pro
     var imageBytesL=['',''];
     //FUNCION PARA TRATAR LA PRIMERA IMAGEN
     function Buff_IMG1(){
-        var control = document.getElementById("add-new-photo")
+        var control = document.getElementById("add-new-photo");
         var file = control.files[0];
         if (file.size >= 5123179){
             // window.alert("La imagen pesa mas de 5mb")
@@ -41,7 +41,7 @@ document.getElementById("Button").addEventListener("click", function (event){Pro
                     }
                     imageBytesL[0]=imageBytes;
                     // console.log("---> Buffer de la 1era IMAGEN");
-                    // console.log(imageBytes);
+                    //console.log(imageBytes);
                 }
             })(file);
             reader.readAsDataURL(file);
@@ -95,8 +95,8 @@ document.getElementById("Button").addEventListener("click", function (event){Pro
 
     //FUNCIONES QUE NECESITAMOS
     function Comparar_Rostros(buf,buf1){
-        // console.log(buf);
-        // console.log(buf1);
+        //console.log(buf);
+        //console.log(buf1);
 
         const client = new AWS.Rekognition();
         const params = {
